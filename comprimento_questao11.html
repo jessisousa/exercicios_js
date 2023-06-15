@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         window.onload = function() {
+            var hora = new Date().getHours();
+            var cumprimento;
+
+            if (hora >= 0 && hora < 12) {
+                cumprimento = "Bom Dia!";
+            } else if (hora >= 12 && hora < 18) {
+                cumprimento = "Boa Tarde!";
+            } else {
+                cumprimento = "Boa Noite!";
+            }
+
+            var h1Element = document.createElement("h1");
+            h1Element.textContent = cumprimento + " " + hora + " - horas";
+
+            document.body.appendChild(h1Element);
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Número Divisor</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="calc-container">
+            <h2>Número Divisor</h2>
+            <form id="myForm">
+                <div class="form-inputs">
+                    <div class="form-control">
+                        <label for="num1">Primeiro número:</label>
+                        <input type="number" id="num1" name="num1" placeholder="Digite o Primeiro Numero" required>
+
+                        <label for="num2">Segundo número:</label>
+                        <input type="number" id="num2" name="num2" placeholder="Digite o Segundo Numero" required>
+
+                    </div>
+                    <div class="action-control">
+                        <button id="calc-btn" type="submit"  onclick="verificarDivisores()">Encontrar Número Divisor</button>
+
+                    </div>
+                </div>
+                </form>
+                <script src="assets/js/script.js"></script>
+</body>
+</html>
